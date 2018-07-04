@@ -1,5 +1,6 @@
-r=raw_input()
-if r in("a", "e", "i", "o", "u"):
-	print("r is a vowel") 
+r=['a','e','i','o','u','A','E','I','O','U'];
+s=raw_input("Enter the letter:")
+if(s in r):
+  print("vowel")
 else:
-	print("r is cosonant")
+  print("consonant")
