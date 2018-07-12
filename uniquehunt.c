@@ -22,7 +22,7 @@ int main()
 	}
 		if(count==0)
 		{
-			printf("\nunique");
+			printf("unique");
 }
 return 0;
 }
