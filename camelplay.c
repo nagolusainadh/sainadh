@@ -1,53 +1,53 @@
 #include<stdio.h>
 int main()
 {
-    char b[100];
+    char c[100];
     int i,j=0,k[100];
-    scanf("%[^\n]s",&b);
-    for(i=0;b[i]!='\0';i++)
+    scanf("%[^\n]s",&c);
+    for(i=0;c[i]!='\0';i++)
     {
         if(i==0)
         {
-            if(b[i]>='a' && b[i]<='z')
+            if(c[i]>='a' && c[i]<='z')
             {
-            b[i]=b[i]-32;
+            c[i]=c[i]-32;
             }
         }
         else
         {
-            if(b[i]==' ')
+            if(c[i]==' ')
             {
                 k[j]=i+1;
                 j++;
             }
-            else if(b[i]>='A' && b[i]<='Z')
+            else if(c[i]>='A' && c[i]<='Z')
             {
-            b[i]=b[i]+32;
+            c[i]=c[i]+32;
             }
         }
     }
-    for(i=0;b[i]!='\0';i++,j=0)
+    for(i=0;c[i]!='\0';i++,j=0)
     {
         
         if(k[j]==i)
         {
-            if(b[i]>='a' && b[i]<='z')
+            if(c[i]>='a' && c[i]<='z')
             {
-            b[i]=b[i]-32;
+           c[i]=c[i]-32;
             }
         }
         j++;
     }
     
-    for(i=0;b[i]!='\0';i++)
+    for(i=0;c[i]!='\0';i++)
     {
-        if(b[i]==' ')
+        if(c[i]==' ')
         {
             printf("\t");
         }
         else
         {
-            printf("%c",b[i]);
+            printf("%c",c[i]);
         }
     }
     return 0;
