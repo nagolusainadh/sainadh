@@ -1,11 +1,11 @@
 count=0
 j=0
-a=raw_input().lower()
+b=raw_input().lower()
 c=raw_input().lower()
-if a==c:
+if b==c:
     print "no"
 else:
-    for i in a:
+    for i in b:
         if i==c[j]:
             j+=1
         else:
