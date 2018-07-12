@@ -1,5 +1,5 @@
-a=input()
+c=input()
 b=input()
 import math
-c=math.pow(a,b)
-print(c)
+a=math.pow(c,b)
+print(a)
