@@ -1,28 +1,58 @@
 #include<stdio.h>
 int main()
 {
-	int b[100],n,i,j,count=0;
-	printf("");
-	scanf("%d",&n);
-	printf("");
-	for(i=0;i<n;i++)
-	{
-		scanf("%d",&b[i]);
-	}
-	for(i=0;i<n;i++)
-	{
-		for(j=i+1;j<n;j++)
-		{
-			if(b[i]==b[j])
-			{
-				printf("%d ",b[i]);
-				count=count+1;
-			}
-		}
-	}
-		if(count==0)
-		{
-			printf("unique");
-}
-return 0;
+   int n,a[100],i,b,c=0,e=0,j[20],l=0,s,k;
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+   {
+     scanf("%d",&a[i]);
+   }
+   for(i=0;i<n;i++)
+   {
+      c=0;
+      e=0;
+      b=a[i];
+      while(e<n)
+      {
+         if(b==a[e])
+         {
+           c++;
+         }     
+           e++;     
+      }
+ 
+      if(c>1)
+      {
+        j[l]=b;
+        l++;                        
+      }        
+   }
+   if(l!=0)
+   { 
+   for(i=0;i<l;i++)
+    {
+        for(s=i+1;s<l;)
+        {
+            if(j[s] ==j[i])
+            {
+                for(k=s;k<l;k++)
+                {
+                    j[k]=j[k+1];
+                }
+                l--;
+            }
+            else
+            {
+                s++;
+            }
+        }
+    }
+    for(i=0;i<l;i++)
+    {
+        printf("%d ",j[i]);
+    } 
+   }
+   else
+   printf("unique");     
+   return 0;
 }
