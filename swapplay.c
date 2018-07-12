@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-int n,i,count=0,j,k;
+int n,i,c=0,j,k;
 char a[100],v;
 scanf("%[^\n]s",&a);
 for(i=0;a[i]!='\0';i++)
 {
-count++;
+c++;
 }
-for(i=0;i<count;i++)
+for(i=0;i<c;i++)
 {
 if(i%2!=0)
 {
