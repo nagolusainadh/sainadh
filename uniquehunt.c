@@ -49,7 +49,10 @@ int main()
     }
     for(i=0;i<l;i++)
     {
-        printf("%d ",j[i]);
+       if(i==0)
+        printf("%d",j[i]);
+       else
+          printf(" %d",j[i]);
     } 
    }
    else
