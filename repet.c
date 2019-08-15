@@ -11,12 +11,12 @@ int main()
  int j;
  for(i=0;i<n;i++)
  {
-  for(j=1;j<n-1;j++)
+  for(j=i+1;j<n-1;j++)
   {
    if(arr[i]==arr[j])
    {
     b=arr[i];
-    printf("%d",b);
+    printf("%d ",b);
     break;
    }
   }
