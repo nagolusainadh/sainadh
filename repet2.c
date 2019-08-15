@@ -17,11 +17,11 @@ int main()
    {
     b=arr[i];
     printf("%d ",b);
-    break;
    }
-  if(b!=0)
   break;
   }
+ if(b!=0)
+ break;
  }
  if(b==0)
  printf("unique");
